@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #24292a;  
+  /* background-color: #24292a;   */
   color: #fff;
 }
 
@@ -19,8 +19,8 @@ code {
 }
 
 .hero {
-  margin-top: 100px;
-  padding: 10px;
+  /* margin-top: 100px; */
+  padding: 100px 10px 10px 10px;
 }
 
 .main > .container {
