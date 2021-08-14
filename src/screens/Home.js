@@ -18,7 +18,10 @@ const Home = () => {
       <div className="hero">
         <div style={{textAlign: 'center'}}>
           <h1>Open source podcast 2.0 widget player</h1>
-          <a href="https://github.com/montekaka/react-podcast-ninja" className="primary-button" target="_blank">Get started</a>
+          <div>
+            <a href="https://github.com/montekaka/react-podcast-ninja" className="primary-button" target="_blank" style={{marginRight: 20}}>Get started</a>
+            <a href="https://justcast.com" className="secondary-button" target="_blank">by JustCast</a>
+          </div>          
         </div>
       </div>
       <div className="container">        
