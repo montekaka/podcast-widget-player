@@ -22,7 +22,7 @@ const Player = (props) => {
         rssFeedUrl={values['rss']}
         playerId="podcast-player"
         configs={configs}
-        // proxy={process.env['REACT_APP_PROXY']}
+        proxy={process.env['REACT_APP_PROXY']}
       />
     )
   }
