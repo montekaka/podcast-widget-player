@@ -5,7 +5,7 @@ import {
   rssFeedAtom,
   configsAtom,
 } from '../jotai'
-import {Input} from './../components'
+import {Input, ControlPanel} from './../components'
 // import {JCPlayer} from '../components/jc-player'
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
   return (
     <div className="main">
       <div className="container">
+        <ControlPanel/>
         <div className="demo-panel">
           <Input/>
           <div style={{padding: "24px 16px"}}>
@@ -24,9 +25,7 @@ const Home = () => {
           }
           </div>
         </div>
-        <div className="control-panel">
-
-        </div>
+        
       </div>
     </div>
   )
