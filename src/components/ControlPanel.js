@@ -23,19 +23,21 @@ const ControlPanel = () => {
     <div className="control-panel">
       <div>
         <div style={{fontSize: "20px", fontWeight: 500, marginBottom: 30}}>Customize</div>
-        {
-          options.map((option ) => {
-            const {id, label} = option;
-            const color = configs[id];
-            return <ColorPickerCard 
-              key={id}
-              id={id}
-              name={label}
-              color={color}
-              handleColorChange={handleChange}
-            />
-          })
-        }
+        <div className="control-panel-options">
+          {
+            options.map((option ) => {
+              const {id, label} = option;
+              const color = configs[id];
+              return <ColorPickerCard 
+                key={id}
+                id={id}
+                name={label}
+                color={color}
+                handleColorChange={handleChange}
+              />
+            })
+          }
+        </div>
       </div>
     </div>
   )

@@ -22,5 +22,26 @@ code {
 .main > .container {
   display: grid;
   grid-template-columns: auto 360px;
+  grid-template-areas: "demopanel controlpanel"
+}
+
+.demo-panel {
+  grid-area: demopanel;
+}
+
+.control-panel {
+  grid-area: controlpanel;  
+}
+
+
+@media (max-width: 500px) {
+  .main > .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "demopanel"
+    "controlpanel"    
+  }
 }
 
