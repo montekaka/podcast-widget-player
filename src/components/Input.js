@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from 'axios'
 import {useAtom} from 'jotai'
 import {
   rssFeedAtom,
@@ -15,6 +16,15 @@ const Input = () => {
   }
 
   const handleClick = () => {
+    // console.log(value)
+    // axios.get(`http://localhost:4500/v1/proxy_feed_parser?uri=${value}`)
+    // .then((res) => {
+    //   console.log(res.data)
+    // })
+    // .catch((err) => {
+    //   console.log(err)
+    // })
+
     setRssFeed(value);
   }
 

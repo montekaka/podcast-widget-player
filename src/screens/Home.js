@@ -25,7 +25,7 @@ const Home = () => {
           <WidgetCodePanel/>
           <div style={{padding: "24px 16px"}}>
           {
-            rssFeed ? <NinjaPodcastPlayer rssFeedUrl={rssFeed} playerId="podcast-player" configs={configs}/> : <div></div>
+            rssFeed ? <NinjaPodcastPlayer rssFeedUrl={rssFeed} playerId="podcast-player" configs={configs} proxy="http://localhost:4500/v1/proxy_feed_parser?uri="/> : <div></div>
           }
           </div>          
         </div>
