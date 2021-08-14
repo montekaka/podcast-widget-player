@@ -1,23 +1,32 @@
 import React from "react";
+import queryString from 'query-string'
 import {NinjaPodcastPlayer} from 'react-podcast-ninja'
-// import {useAtom} from 'jotai'
-// import {podcastRssAtom, episodesAtom, playingIdAtom, chaptersAtom, playerSkinAtom} from '../jotai'
+import {useAtom} from 'jotai'
+import {playerSkinOptions} from '../jotai'
 // import {JCPlayer} from '../components/jc-player'
 
-const Player = () => {
-  
-  
-  return (
-    <div>
-      <NinjaPodcastPlayer
-        rssFeedUrl="https://feed.justcast.com/shows/readcast/audioposts.rss"
-        playerId="podcast-player"
-      />
-      <div>
+const Player = (props) => {
+  const values = queryString.parse(props.location.search); 
+  // console.log(values['rss'])
+  const [options] = useAtom(playerSkinOptions)
 
-      </div>
-    </div>
-  )
+  if(values && values['rss']) {
+    const configs = {}
+    for(let i = 0; i < options.length; i++) {
+      const id = options[i]['id'];
+      const color = values[id];
+      configs[id] = `#${color}`;
+    }
+    return (
+      <NinjaPodcastPlayer
+        rssFeedUrl={values['rss']}
+        playerId="podcast-player"
+        configs={configs}
+      />
+    )
+  }
+
+  return null;
 }
 
 export default Player;

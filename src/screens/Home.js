@@ -15,6 +15,10 @@ const Home = () => {
 
   return (
     <div className="main">
+      <div>
+        <h2>Open source podcast 2.0 widget player</h2>
+        <div href="https://github.com/montekaka/podcast-widget-player/">Get started</div>
+      </div>
       <div className="container">        
         <div className="demo-panel">
           <Input/>

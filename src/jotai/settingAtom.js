@@ -36,7 +36,9 @@ export const getWidgetCodeAtom = atom((get) => {
   const configs = get(configsAtom);
   const options = get(playerSkinOptions)
   const remote = process.env['REACT_APP_PATH'];
-  const colorOptions = options.map((x) => `${x.id}=${configs[x.id]}`);
+  // str.replace("Microsoft", "W3Schools");
+
+  const colorOptions = options.map((x) => `${x.id}=${configs[x.id].replace('#', '')}`);
 
   if(rssFeed) {
     const str = `${remote}/widget?rss=${rssFeed}&${colorOptions.join("&")}`
