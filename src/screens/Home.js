@@ -1,18 +1,27 @@
 import React from "react";
 import {NinjaPodcastPlayer} from 'react-podcast-ninja'
-// import {useAtom} from 'jotai'
-// import {podcastRssAtom, episodesAtom, playingIdAtom, chaptersAtom, playerSkinAtom} from '../jotai'
+import {useAtom} from 'jotai'
+import {
+  rssFeedAtom,
+  configsAtom,
+  playerSkinOptions,
+  updateColorAtom
+} from '../jotai'
 // import {JCPlayer} from '../components/jc-player'
 
 const Home = () => {
-    
+  
+  const [rssFeed] = useAtom(rssFeedAtom)
+  const [configs] = useAtom(configsAtom);
+
   return (
-    <div>
-      <NinjaPodcastPlayer
-        rssFeedUrl="https://feed.justcast.com/shows/readcast/audioposts.rss"
-        playerId="podcast-player"
-      />
-      <div>
+    <div className="main-container">
+      <div className="demo-panel">
+        {
+          rssFeed ? <NinjaPodcastPlayer rssFeedUrl={rssFeed} playerId="podcast-player" configs={configs}/> : <div></div>        
+        }
+      </div>
+      <div className="control-panel">
 
       </div>
     </div>
