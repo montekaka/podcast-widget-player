@@ -30,3 +30,18 @@ export const updateColorAtom = atom((get) => get(configsAtom), (_get, set, value
   const colors = _get(configsAtom);
   set(configsAtom, {...colors, ...value})
 })
+
+export const getWidgetCodeAtom = atom((get) => {
+  const rssFeed = get(rssFeedAtom);
+  const configs = get(configsAtom);
+  const options = get(playerSkinOptions)
+  const remote = process.env['REACT_APP_PATH'];
+  const colorOptions = options.map((x) => `${x.id}=${configs[x.id]}`);
+
+  if(rssFeed) {
+    const str = `${remote}/widget?rss=${rssFeed}&${colorOptions.join("&")}`
+    return str;
+  }
+
+  return null;
+})

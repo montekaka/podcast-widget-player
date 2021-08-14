@@ -2,12 +2,14 @@ import {
   rssFeedAtom,
   configsAtom,
   playerSkinOptions,
-  updateColorAtom
+  updateColorAtom,
+  getWidgetCodeAtom
 } from './settingAtom'
 
 export {
   rssFeedAtom,
   configsAtom,
   playerSkinOptions,
-  updateColorAtom
+  updateColorAtom,
+  getWidgetCodeAtom
 }
