@@ -6,6 +6,13 @@
   align-items: center;
 }
 
+.basic-input {
+  background: linear-gradient(#24292a, #24292e) 50%, rgba(36, 41, 46, 0);
+  display: grid;
+  grid-template-columns: auto 120px;
+  align-items: center;
+}
+
 .css-79elbk {
   /* display: block; */
   position: relative;
@@ -40,6 +47,10 @@
   appearance: none;
   outline: 0px;
   border-radius: 6px;
+}
+
+.simple-input {
+  padding: 16px;
 }
 
 .button-container {

@@ -40,7 +40,7 @@ export const getWidgetCodeAtom = atom((get) => {
 
   if(rssFeed) {
     const str = `${remote}/widget?rss=${rssFeed}&${colorOptions.join("&")}`
-    return str;
+    return `<iframe src='${str}' width='100%' height='370' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:370px;'></iframe>`    
   }
 
   return null;
