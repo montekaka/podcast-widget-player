@@ -1,0 +1,70 @@
+.css-68bi76 {
+  padding: 24px 16px;
+  background: linear-gradient(#24292a, #24292e) 50%, rgba(36, 41, 46, 0);
+  display: grid;
+  grid-template-columns: auto 120px;
+  align-items: center;
+}
+
+.css-79elbk {
+  /* display: block; */
+  position: relative;
+}
+
+.css-1jo5a5k {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.css-1j9w4jl {
+  width: 100%;
+  margin: 0px;
+  padding: 16px 16px 16px 52px;
+  font-size: inherit;
+  line-height: 1;
+  font-family: inherit;
+  color: inherit;
+  background-color: var(--theme-ui-colors-background,#2f363d);
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+  border: 0px;
+  appearance: none;
+  outline: 0px;
+  border-radius: 6px;
+}
+
+.button-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.css-s700uk {
+  display: inline-block;
+  margin: 0px;
+  font-weight: 500;
+  width: 100px;
+  height: 50px;
+  font-family: inherit;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #444d56;
+  padding: 4px 8px;
+  font-size: 14px;
+}
