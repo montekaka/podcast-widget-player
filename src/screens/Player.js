@@ -18,14 +18,12 @@ const Player = (props) => {
       configs[id] = `#${color}`;
     }
     return (
-      <div style={{height: "100vh", width: "100%", margin: 0, padding: 0, boxSizing: 'border-box'}}>
-        <NinjaPodcastPlayer
-          rssFeedUrl={values['rss']}
-          playerId="podcast-player"
-          configs={configs}
-          proxy={process.env['REACT_APP_PROXY']}
-        />
-      </div>
+      <NinjaPodcastPlayer
+        rssFeedUrl={values['rss']}
+        playerId="podcast-player"
+        configs={configs}
+        // proxy={process.env['REACT_APP_PROXY']}
+      />
     )
   }
 
