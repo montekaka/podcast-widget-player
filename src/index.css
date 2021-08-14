@@ -21,6 +21,6 @@ code {
 
 .main > .container {
   display: grid;
-  grid-template-columns: 360px auto;
+  grid-template-columns: auto 360px;
 }
 
