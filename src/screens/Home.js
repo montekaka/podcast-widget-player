@@ -30,7 +30,7 @@ const Home = () => {
           <WidgetCodePanel/>
           <div style={{padding: "24px 16px"}}>
           {
-            rssFeed ? <NinjaPodcastPlayer rssFeedUrl={rssFeed} playerId="podcast-player" configs={configs} proxy={process.env['REACT_APP_PROXY']}/> : <div className="empty-message"><h3>☝️ Enter your RSS to get started</h3></div>
+            rssFeed ? <NinjaPodcastPlayer rssFeedUrl={rssFeed} playerId={`podcast-player`} configs={configs} proxy={process.env['REACT_APP_PROXY']}/> : <div className="empty-message"><h3>☝️ Enter your RSS to get started</h3></div>
           }
           </div>          
         </div>
