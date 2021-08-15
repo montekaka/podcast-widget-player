@@ -9160,10 +9160,10 @@ react-player@^2.9.0:
     prop-types "^15.7.2"
     react-fast-compare "^3.0.1"
 
-react-podcast-ninja@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/react-podcast-ninja/-/react-podcast-ninja-1.2.6.tgz#c3ae631a9fcb43796e9ad537979585413585ca8c"
-  integrity sha512-GXeRImQDlIV/NETM+IyQbLiOmv/UI+EmIzjENvCwCrlyHuEnNpBxFNE1WUnokt/VQTeF3rbKnhUSTMIxdVQXiA==
+react-podcast-ninja@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/react-podcast-ninja/-/react-podcast-ninja-1.2.7.tgz#1601d80fe74779379454ba02e1dfe77ceaa9beec"
+  integrity sha512-6vCgqCmIN2fvPCovyQKDtER6GHx6Gur5twkjJ5oH/7Cy8i8qoeYD/Ac2Z/+3M78Enbs64nDx4fEPC4n4QQ4QIg==
 
 react-refresh@^0.8.3:
   version "0.8.3"
