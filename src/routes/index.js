@@ -6,13 +6,14 @@ import {
   Link
 } from "react-router-dom";
 
-import {Player, Home} from '../screens'
+import {Player, Home, Comments} from '../screens'
 
 const MainRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/widget" component={Player} />
+      <Route exact path="/comments" component={Comments} />
     </Switch>
   )
 }
