@@ -6,7 +6,7 @@ import {playerSkinOptions} from '../jotai'
 // import {JCPlayer} from '../components/jc-player'
 
 const Player = (props) => {
-  const values = queryString.parse(props.location.search); 
+  const values = queryString.parse(props.location.search);
   // console.log(values['rss'])
   const [options] = useAtom(playerSkinOptions)
 
