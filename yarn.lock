@@ -9343,10 +9343,10 @@ react-player@^2.9.0:
     prop-types "^15.7.2"
     react-fast-compare "^3.0.1"
 
-react-podcast-ninja@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/react-podcast-ninja/-/react-podcast-ninja-1.7.1.tgz#f14bd0ea52cb1f2fcaffebf99c2018a8d6eecd74"
-  integrity sha512-cohbuExeEWDuiEpF6aGR8StoGqqmh0cuq0jcwOmZS51qFmVZR6CkhHJrkexZk8dQ7nxpa3jwQzqfmo67GTBvcg==
+react-podcast-ninja@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/react-podcast-ninja/-/react-podcast-ninja-1.7.2.tgz#c9d221f0a42152cdb8620da3048372cc967cc4a7"
+  integrity sha512-7UHwJ5bEXDGX8t2Cvg5igq+g1L5saEhQ4hzSw9Y1z/qDyk+vl5PbFvmKBCan0WaDF8W6Bd4kkhtpMf/GqDJ3+w==
 
 react-qrcode-logo@^2.9.0:
   version "2.9.0"
